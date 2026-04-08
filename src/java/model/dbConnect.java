@@ -8,7 +8,8 @@ public class dbConnect {
     public static Connection getConnect(){
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            return DriverManager.getConnection("jdbc:mysql://localhost:3306/dbshopthoitrangnam", "root", "");
+            String url = "jdbc:mysql://localhost:3306/dbshopthoitrangnam";
+            return DriverManager.getConnection(url, "root", "");
         } catch (Exception e) {
             return null;
         }
