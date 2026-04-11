@@ -24,7 +24,7 @@
         </div>
 
         <!-- 🔵 TOP MENU -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Trang chủ</a>
 
@@ -50,7 +50,7 @@
 
                 <!-- 🟡 LEFT MENU -->
                 <div class="col-md-3">
-                    <div class="list-group">
+                    <div class="list-group" style="position: sticky; top: 80px;">
                         <a href="#" class="list-group-item active">Danh mục</a>
                         <a href="#" class="list-group-item">Áo</a>
                         <a href="#" class="list-group-item">Quần</a>
@@ -71,7 +71,7 @@
 
                         <div class="col-md-4 mb-3">
                             <div class="card">
-                                <img src="<%= p.getImage()%>" class="card-img-top" height="200">
+                                <img src="<%= p.getImage()%>" class="card-img-top" style="height:200px; object-fit:cover;">
                                 <div class="card-body text-center">
                                     <h5 class="card-title"><%= p.getName()%></h5>
                                     <p class="text-danger"><%= p.getPrice()%> VNĐ</p>
@@ -84,7 +84,7 @@
                             }
                         %>
                     </div>
-                    
+
                     <h3>Hàng bán chạy</h3>
                     <div class="row">
                         <%
@@ -95,7 +95,7 @@
 
                         <div class="col-md-4 mb-3">
                             <div class="card">
-                                <img src="<%= p.getImage()%>" class="card-img-top" height="200">
+                                <img src="<%= p.getImage()%>" class="card-img-top" style="height:200px; object-fit:cover;">
                                 <div class="card-body text-center">
                                     <h5 class="card-title"><%= p.getName()%></h5>
                                     <p class="text-danger"><%= p.getPrice()%> VNĐ</p>
@@ -108,7 +108,7 @@
                             }
                         %>
                     </div>
-                    
+
                     <h3>Hàng giảm giá</h3>
                     <div class="row">
                         <%
@@ -119,7 +119,7 @@
 
                         <div class="col-md-4 mb-3">
                             <div class="card">
-                                <img src="<%= p.getImage()%>" class="card-img-top" height="200">
+                                <img src="<%= p.getImage()%>" class="card-img-top" style="height:200px; object-fit:cover;">
                                 <div class="card-body text-center">
                                     <h5 class="card-title"><%= p.getName()%></h5>
                                     <p class="text-danger"><%= p.getPrice()%> VNĐ</p>
@@ -133,7 +133,7 @@
                         %>
                     </div>
 
-                    
+
                 </div>
 
             </div>
